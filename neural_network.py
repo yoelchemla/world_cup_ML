@@ -26,7 +26,7 @@ model.compile(loss="binary_crossentropy", optimizer="adam", metrics=["accuracy"]
 history = model.fit(train_data, train_target, epochs=50, validation_data=(test_data, test_target))
 
 # Evaluate the model
-_, accuracy = model.evaluate(test_data, test_target)
+accuracy = model.evaluate(test_data, test_target)
 print(f"Accuracy of model: {accuracy}")
 
 # win of home team
